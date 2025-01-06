@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My web page</title>
+    <style>
+      p,
+      h1 {
+        color: red;
+      }
+    </style>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+
+  <body>
+    <div>
+
+      <button onclick="clickMe()">click me</button>  
+      <script>
+        var number = 0
+        function clickMe(){
+            
+            number = number + 1
+
+            if(number > 2){
+                alert('no clicks left!')
+                return
+            }
+
+            alert('you have clicked me ' + number + ' time')
+        }
+      </script>
+
+      <select id="country" name="country">
+        <option value="australia">Australia</option>
+        <option value="canada">Canada</option>
+        <option value="usa">USA</option>
+      </select>
+
+      <input type="checkbox" />I'm a human
+      <input type="radio" />
+
+      <a href="https://google.com">Go to google</a>
+
+      <h1 id="myid" class="myclass">This is the header</h1>
+      <p class="myclass">This is the header</p>
+      <img
+        class="thumbnail"
+        src="https://images.unsplash.com/photo-1735597693189-9ba81b5bbc83?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+      />
+      <img class="thumbnail" src="myimage.jpeg" />
+    </div>
+
+    <div style="background-color: gainsboro; width: 200px; border: 1px solid;" class="container">
+      <input type="search" placeholder="Search something" />
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+        class="size-6"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"
+        />
+      </svg>
+    </div>
+
+    <p>class project</p>
+    <h1 style="text-decoration: underline">This is header</h1>
+    <h2>This is H2 HTML Tag</h2>
+    <input placeholder="Username" type="text" />
+    <br />
+    <input placeholder="Type password" type="password" />
+    <input type="submit" value="Log in" />
+  </body>
+</html>

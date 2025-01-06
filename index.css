@@ -1,0 +1,48 @@
+body{
+    /* background-color: yellow; */
+    text-align: center;
+}
+
+h2{
+    background-color: blue;
+    color: white;
+    padding: 10px;
+    /* width: 500px; */
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: italic;
+    opacity: 0.9;
+}
+
+p {
+    font-size: 25px;
+    border-style: dotted;
+    padding: 10px;
+}
+
+.myclass{
+    color: green;
+    text-decoration: underline;
+}
+
+#myid{
+    color: brown;
+    font-style: italic;
+}
+
+.thumbnail {
+    width: 200px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.size-6{
+    width: 24px
+}
+
+.container{
+    display: flex;
+    justify-content: center; /* Horizontally centers */
+    align-items: center;    /* Vertically centers */
+    border: 1px solid black;
+}
