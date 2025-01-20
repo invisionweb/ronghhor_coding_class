@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="document.getElementById('time_date').innerHTML = Date()">
+        Display time and date
+    </button>
+    <p id="time_date"></p>
+
+    <button onclick="myFunction()">
+        Run myFunction()
+    </button>
+    <p>Another P Tag</p>
+    <div id="my-message">Message to be replaced</div>
+
+    <script>
+
+        function myFunction(){
+            //alert('running my function...')
+
+            console.log('running my function...', 5 + 6)
+
+            document.getElementById('my-message').innerHTML = '<h2>running my function...</h2>'
+
+            document.querySelector('p').innerText = "Hello World!"
+        }
+    </script>
+</body>
+</html>
