@@ -14,11 +14,11 @@ let getNumber = parseInt(prompt("Enter a number"))
 
 if(diceRoll === getNumber){
     console.log("You guessed the right number")
-    document.write("You guessed the right number")
+    Document.write("You guessed the right number")
 }
 else{
     console.log("You guessed the wrong number")
-    document.write("You guessed the wrong number")
+    Document.write("You guessed the wrong number")
 }
 
 /* if(diceRoll === 1 || diceRoll === 2){
