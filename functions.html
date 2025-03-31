@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Learning about functions</p>
+    <p>Functions are reusable blocks of code that perform a specific task.</p>
+
+    <div class="container">
+        <label for="email">Email</label>
+        <input type="email" placeholder="Enter email"><br>
+        <label>Enter password</label>
+        <input type="text" id="password" placeholder="Enter password" onkeyup="myFunction()">
+        <button onclick="checkLength(document.getElementById('password').value)">Check Length</button>
+        <button onclick="document.getElementById('result').innerHTML = ''">Clear</button>
+    </div>
+
+    <p id="length_of_password"></p>
+
+    <p id="result"></p>
+
+    <script>
+
+        function myFunction(e){
+            const val = document.getElementById("password").value
+            console.log("The password you typed is", val);
+
+            const result_elem = document.getElementById("length_of_password")
+
+            result_elem.innerHTML = `The length of the password is: ${val.length}`;
+
+            if(val.length < 10){
+                result_elem.style.color = 'red'
+            } else {
+                result_elem.style.color = 'green'
+            }
+        }
+
+        // Function to greet a user
+        function greetUser(name) {
+            return `Hello, ${name}!`;
+        }
+
+        // Function to add two numbers
+        function addNumbers(a, b) {
+            return a + b;
+        }
+
+        // Function to check if a number is even
+        function isEven(number) {
+            return number % 2 === 0;
+        }
+
+        // Example usage
+        console.log(greetUser("Alice")); // Output: Hello, Alice!
+        console.log(addNumbers(5, 10));   // Output: 15
+        console.log(isEven(4));           // Output: true
+        console.log(isEven(5));           // Output: false
+    </script>
+
+    <script>
+        function checkLength(str){
+            console.log(`The length of the password is: ${str.length}`);
+            document.getElementById("result").innerHTML += `The length of the password is: ${str.length}<br>`;
+        }
+
+        checkLength("abcdefgh")
+        checkLength("lkasjdlkas")
+        checkLength("lnmf")
+        checkLength("lkdnmf")
+        checkLength("lkasmsbdnmf")
+        checkLength("lkas")
+        checkLength("lkasjf")
+    </script>
+
+    <style>
+        input {
+            width: 200px;
+            padding: 10px;
+            margin: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        p{
+            font-size: 16px;
+            color: #333;
+            margin: 10px 0;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        .container {
+            background-color: lightcyan;
+            margin-top: 20px;
+            padding: 10px;
+            border-radius: 12px;
+            width: 50%;
+        }
+    </style>
+</body>
+</html>
